@@ -2,7 +2,7 @@
   {
     "name": "Lumyblu",
     "desc": "Full-Stack Instagram clone built using MERN stack and realtime chat with the help of socket.iO",
-    "image": "Lumyblu",
+    "image": "Lumyblu.png",
     "category": "mern",
     "links": {
       "view": "Lumyblu.html"
