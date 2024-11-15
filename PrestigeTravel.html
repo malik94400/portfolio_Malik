@@ -5,88 +5,60 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prestige Travel</title>
     <style>
-        @import url('https://fonts.googleapis.com/css?family=Raleway:300&display=swap');
-        @import url('https://fonts.googleapis.com/css?family=Monoton&display=swap');
-        @import url('https://fonts.googleapis.com/css?family=Poppins:500&display=swap');
-
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
-
         body {
-            font-family: 'Raleway', sans-serif;
-            background-color: #fff;
-            color: #333;
-            overflow-x: hidden;
+            background: #eef1f7;
+            font-family: "Poppins", sans-serif;
+            color: #2c2c2c;
         }
 
         .container {
             max-width: 1200px;
-            margin: 0 auto;
-            padding: 20px;
-            display: flex;
-            flex-wrap: wrap;
-        }
-
-        .left-section,
-        .right-section {
-            width: 50%;
-            padding: 20px;
+            margin: 2rem auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
         }
 
         .section {
-            background-color: #f4f4f4;
-            border-radius: 8px;
-            padding: 20px;
-            margin-bottom: 20px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            background-color: #f3f6fc;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            transform: translateY(-5px);
         }
 
         .section-title {
-            font-family: 'Monoton', cursive;
-            font-size: 1.8em;
-            margin-bottom: 10px;
-            color: #333;
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #2506ad;
+            margin-bottom: 1rem;
+            transition: color 0.3s ease;
         }
 
-        .category-title {
-            font-family: 'Poppins', sans-serif;
-            font-size: 1.2em;
-            color: #333;
-            margin-top: 15px;
-            margin-bottom: 8px;
+        .section:hover .section-title {
+            color: #011aff;
         }
 
-        .section p,
         .category p {
-            line-height: 1.6;
+            font-size: 1.6rem;
+            line-height: 1.8;
             color: #555;
+            transition: color 0.3s ease;
         }
 
-        .section img {
-            max-width: 100%;
-            border-radius: 8px;
-            margin-top: 20px;
+        .section:hover .category p {
+            color: #333;
         }
 
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-            border-radius: 8px;
-        }
-
-        @media only screen and (max-width: 768px) {
-            .left-section,
-            .right-section {
-                width: 100%;
-            }
-
-            .section {
-                padding: 15px;
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
             }
         }
     </style>
@@ -99,7 +71,8 @@
         <div class="section">
             <h2 class="section-title">Adresse :</h2>
             <div class="category">
-                <p>74 Rue du Faubourg Saint-Antoine, 75012 Paris</p>
+                <p>28 RUE CAMILLE BLANC <br>
+                    94400 VITRY-SUR-SEINE</p>
             </div>
         </div>
     </div>
@@ -108,7 +81,8 @@
         <div class="section">
             <h2 class="section-title">Forme Juridique :</h2>
             <div class="category">
-                <p>SA à conseil d'administration</p>
+                <p>SASU (Société par actions siplifiée à associé unique)
+                </p>
             </div>
         </div>
     </div>
@@ -119,7 +93,7 @@
         <div class="section">
             <h2 class="section-title">Taille :</h2>
             <div class="category">
-                <p>50-60 Employés</p>
+                <p>Petite structure (4 salariés)</p>
             </div>
         </div>
     </div>
@@ -128,7 +102,7 @@
         <div class="section">
             <h2 class="section-title">Secteur d'activité :</h2>
             <div class="category">
-                <p>Spécialisée dans le domaine biomédical, solutions pour traiter la DMLA (Dégénérescence Maculaire Liée à l'Âge).</p>
+                <p>Services de transport privé et personnalisé pour clients VIP</p>
             </div>
         </div>
     </div>
@@ -139,44 +113,42 @@
         <div class="section">
             <h2 class="section-title">RGPD :</h2>
             <div class="category">
-                <p>Protection des données personnelles, consentement éclairé, sécurité et anonymisation des données.</p>
+                <p>- Protection des données personnelles <br>
+                    - consentement éclairé</p>
             </div>
         </div>
     </div>
 
     <div class="right-section">
         <div class="section">
-            <h2 class="section-title">Ressources Tangibles et Intangibles :</h2>
+            <h2 class="section-title">La mission :</h2>
             <div class="category">
-                <h3 class="category-title">Ressources Tangibles</h3>
-                <p>Biens immobiliers : Locaux, Laboratoire.<br>Équipement : Machines de production, outils de pointe.<br>Inventaire : Matières premières, produits finis.<br>Liquidités : Comptes bancaires, investissements.</p>
-            </div>
-            <div class="category">
-                <h3 class="category-title">Ressources Intangibles</h3>
-                <p>Propriété intellectuelle : Brevets, droits d'auteurs.<br>Réputation : Perçue positivement par les clients.<br>Capital humain : Équipe hautement qualifiée.<br>Relations : Suivi solide avec les patients.</p>
+                <p>Conception et mise en œuvre d'un site vitrine</p>
             </div>
         </div>
     </div>
-</div>
 
-<div class="container">
-    <div class="left-section">
-        <div class="section">
-            <h2 class="section-title">Les missions</h2>
-            <div class="category">
-                <p>Conception et mise en œuvre de tests pour évaluer un logiciel développé en C++ permettant le fonctionnement de l'implant et de la caméra du patient.</p>
-            </div>
-        </div>
-    </div>
-</div>
 
-<div class="container">
-    <div class="left-section">
-        <img src="img/Cahier%20des%20Charges%20pour%20TEST%20C++.png" alt="service-two">
-        <img src="img/Confluence.png" alt="service-two">
-        <img src="img/Lunette-V4_0000-pixium.png" alt="service-two">
-    </div>
-</div>
 
+</div>
 </body>
 </html>
+
+
+
+
+<!--
+<div class="right-section">
+    <div class="section">
+        <h2 class="section-title">Ressources Tangibles et Intangibles :</h2>
+        <div class="category">
+            <h3 class="category-title">Ressources Tangibles</h3>
+            <p>Biens immobiliers : Locaux, Laboratoire.<br>Équipement : Machines de production, outils de pointe.<br>Inventaire : Matières premières, produits finis.<br>Liquidités : Comptes bancaires, investissements.</p>
+        </div>
+        <div class="category">
+            <h3 class="category-title">Ressources Intangibles</h3>
+            <p>Propriété intellectuelle : Brevets, droits d'auteurs.<br>Réputation : Perçue positivement par les clients.<br>Capital humain : Équipe hautement qualifiée.<br>Relations : Suivi solide avec les patients.</p>
+        </div>
+    </div>
+</div>
+</div>-->
