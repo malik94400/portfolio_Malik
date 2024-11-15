@@ -11,7 +11,7 @@
   {
     "name": "Melshop",
     "desc": "Full-Stack Flipkart with Admin Dashboard and Paytm Payment Gateway. MERN Stack WebApp, ready to use for business.",
-    "image": "flipkartmern",
+    "image": "Melshop",
     "category": "mern",
     "links": {
       "view": "https://melshop75.com/",
@@ -30,7 +30,7 @@
   {
     "name": "Veliko",
     "desc": "ReactJS Basic Resume Generator which will generate customized resume in few minutes on your requirements.",
-    "image": "resumegen",
+    "image": "VelikoLogo",
     "category": "mern",
     "links": {
       "view": "Veliko.html"
