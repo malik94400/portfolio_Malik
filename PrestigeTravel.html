@@ -61,6 +61,40 @@
                 grid-template-columns: 1fr;
             }
         }
+
+        .back-button-container {
+            display: flex;
+            justify-content: center;
+            margin: 3rem 0;
+        }
+
+        .back-button {
+            display: inline-block;
+            text-decoration: none;
+            background-color: #2506ad;
+            color: #fff;
+            padding: 1rem 3rem;
+            font-size: 1.6rem;
+            font-family: "Poppins", sans-serif;
+            font-weight: 600;
+            border-radius: 30px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+        }
+
+        .back-button:hover {
+            background-color: #1a047e;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transform: translateY(-3px);
+        }
+
+        .back-button:active {
+            background-color: #0e035c;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+            transform: translateY(0);
+        }
+
     </style>
 </head>
 
@@ -127,10 +161,12 @@
             </div>
         </div>
     </div>
-
-
-
 </div>
+
+<div class="back-button-container">
+    <a href="javascript:history.back()" class="back-button">Retour</a>
+</div>
+
 </body>
 </html>
 
