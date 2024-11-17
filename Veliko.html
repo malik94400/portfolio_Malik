@@ -2,11 +2,185 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veliko</title>
+    <style>
+        body {
+            font-family: "Poppins", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .section {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-bottom: 2rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            font-size: 2.4rem;
+            font-weight: 700;
+            color: #2506ad;
+            margin-bottom: 1rem;
+        }
+
+        .category p {
+            font-size: 1.6rem;
+            line-height: 1.8;
+            color: #555;
+            margin-top: 1rem;
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 2rem 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: scale(0.9);
+            animation: fadeIn 1s ease-out forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        /* Flex container for blocks */
+        .flex-container {
+            display: flex;
+            gap: 2rem;
+            margin-top: 2rem;
+            flex-wrap: wrap; /* Ensure it wraps on smaller screens */
+        }
+
+        .block {
+            flex: 1;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .block:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .block h3 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #2506ad;
+            margin-bottom: 1rem;
+        }
+
+        .block p {
+            font-size: 1.4rem;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .flex-container {
+                flex-direction: column;
+            }
+
+            .block {
+                flex: unset; /* Blocks take full width on smaller screens */
+            }
+
+            .section {
+                padding: 1.5rem;
+            }
+
+            .section-title {
+                font-size: 2rem;
+            }
+
+            .category p {
+                font-size: 1.4rem;
+            }
+        }
+    </style>
 </head>
 <body>
 
+<div class="container">
+    <!-- Main Project Image -->
+    <div class="image-container">
+        <img src="assets/images/VelikoHomePage.png" alt="Veliko Home Page" />
+    </div>
 
+    <!-- Project Details Section -->
+    <div class="section">
+        <h2 class="section-title">Projet Veliko</h2>
+        <h3>Les difficultés rencontrées :</h3>
+        <div class="category">
+            <p>Mettre les stations en favoris</p>
+        </div>
+
+        <!-- Add Flex Blocks -->
+        <div class="flex-container">
+            <div class="block">
+                <h3>Bloc 1</h3>
+                <p>Description du bloc 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+            <div class="block">
+                <h3>Bloc 2</h3>
+                <p>Description du bloc 2. Integer tincidunt eros vel nulla ultrices, non pharetra mauris ultrices.</p>
+            </div>
+            <div class="block">
+                <h3>Bloc 3</h3>
+                <p>Description du bloc 3. Nulla facilisi. Fusce tristique est at ligula interdum lacinia.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Problem Images -->
+    <div class="image-container">
+        <img src="assets/images/Prob1.png" alt="Problem 1" />
+    </div>
+
+    <div class="image-container">
+        <img src="assets/images/Prob2.png" alt="Problem 2" />
+    </div>
+</div>
 
 </body>
 </html>

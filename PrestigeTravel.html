@@ -95,6 +95,52 @@
             transform: translateY(0);
         }
 
+        .image-container {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 3rem 0;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            opacity: 0;
+            transform: scale(0.9);
+            animation: fadeIn 1s ease-out forwards;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .image-container img:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Animation for fade-in effect */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+
     </style>
 </head>
 
@@ -163,28 +209,9 @@
     </div>
 </div>
 
-<div class="back-button-container">
-    <a href="javascript:history.back()" class="back-button">Retour</a>
+<div class="image-container">
+    <img src="assets/images/externalites.png" alt="Externalités" />
 </div>
 
 </body>
 </html>
-
-
-
-
-<!--
-<div class="right-section">
-    <div class="section">
-        <h2 class="section-title">Ressources Tangibles et Intangibles :</h2>
-        <div class="category">
-            <h3 class="category-title">Ressources Tangibles</h3>
-            <p>Biens immobiliers : Locaux, Laboratoire.<br>Équipement : Machines de production, outils de pointe.<br>Inventaire : Matières premières, produits finis.<br>Liquidités : Comptes bancaires, investissements.</p>
-        </div>
-        <div class="category">
-            <h3 class="category-title">Ressources Intangibles</h3>
-            <p>Propriété intellectuelle : Brevets, droits d'auteurs.<br>Réputation : Perçue positivement par les clients.<br>Capital humain : Équipe hautement qualifiée.<br>Relations : Suivi solide avec les patients.</p>
-        </div>
-    </div>
-</div>
-</div>-->
