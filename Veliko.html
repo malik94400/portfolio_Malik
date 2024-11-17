@@ -137,6 +137,35 @@
                 font-size: 1.4rem;
             }
         }
+
+        .block ul {
+            list-style-type: none; /* Remove default bullets */
+            padding: 0; /* Remove default padding */
+            margin: 1rem 0; /* Add spacing above and below the list */
+            text-align: left; /* Explicitly align text to the left */
+        }
+
+        .block ul li {
+            font-size: 1.4rem;
+            line-height: 1.8;
+            color: #555;
+            padding-left: 1.5rem;
+            position: relative; /* For custom bullet positioning */
+        }
+
+        .block ul li:before {
+            content: "•"; /* Custom bullet */
+            color: #2506ad; /* Bullet color */
+            font-size: 1.6rem;
+            position: absolute;
+            left: 0; /* Align bullet */
+            top: 0.2rem; /* Adjust bullet vertical position */
+        }
+
+        .block ul li strong {
+            color: #333; /* Highlighted text for labels */
+        }
+
     </style>
 </head>
 <body>
@@ -154,16 +183,17 @@
         <!-- Add Flex Blocks -->
         <div class="flex-container">
             <div class="block">
-                <h3>Bloc 1</h3>
-                <p>Description du bloc 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3>Objectif du projet </h3>
+                <p>Développer une carte interactive répertoriant toutes les stations Vélib’ d’Île-de-France. Les utilisateurs peuvent consulter la disponibilité des vélos classiques et électriques, ajouter leurs stations préférées à une liste de favoris, et gérer leur compte via un espace client. Un espace administrateur permet la gestion centralisée des stations et des données.</p>
             </div>
             <div class="block">
-                <h3>Bloc 2</h3>
-                <p>Description du bloc 2. Integer tincidunt eros vel nulla ultrices, non pharetra mauris ultrices.</p>
-            </div>
-            <div class="block">
-                <h3>Bloc 3</h3>
-                <p>Description du bloc 3. Nulla facilisi. Fusce tristique est at ligula interdum lacinia.</p>
+                <h3>Informations utiles</h3>
+                <ul>
+                    <li><strong>Langages utilisés:</strong> TWIG, PHP, JAVASCRIPT</li>
+                    <li><strong>Frameworks utilisés:</strong> Symfony</li>
+                    <li><strong>Base de données:</strong> MySQL</li>
+                    <li><strong>API :</strong> API Vélib’, OpenStreetMap</li>
+                </ul>
             </div>
         </div>
     </div>
