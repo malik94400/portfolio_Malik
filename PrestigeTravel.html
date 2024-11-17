@@ -1,216 +1,136 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prestige Travel</title>
+    <title>6 Box Layout with Content</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            background: #eef1f7;
-            font-family: "Poppins", sans-serif;
-            color: #2c2c2c;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 2rem;
+        }
+
+        .main-box {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        .main-box h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #4b49df;
+            margin-bottom: 2rem;
         }
 
         .container {
             max-width: 1200px;
-            margin: 2rem auto;
+            margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-        }
-
-        .section {
-            background-color: #fff;
-            border-radius: 15px;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px;
             padding: 2rem;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .section:hover {
-            background-color: #f3f6fc;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        .box {
+            background-color: #4b49df;
+            height: 200px;
+            border-radius: 8px;
+            color: white;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
             transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
         }
 
-        .section-title {
-            font-size: 2.2rem;
+        .box h3 {
+            font-size: 1.8rem;
             font-weight: 700;
-            color: #2506ad;
             margin-bottom: 1rem;
-            transition: color 0.3s ease;
+            color: #ffffff;
         }
 
-        .section:hover .section-title {
-            color: #011aff;
-        }
-
-        .category p {
-            font-size: 1.6rem;
-            line-height: 1.8;
-            color: #555;
-            transition: color 0.3s ease;
-        }
-
-        .section:hover .category p {
-            color: #333;
+        .box p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #f0f0f0;
         }
 
         @media (max-width: 768px) {
             .container {
-                grid-template-columns: 1fr;
+                grid-template-columns: 1fr 1fr; /* 2 columns on smaller screens */
             }
         }
 
-        .back-button-container {
-            display: flex;
-            justify-content: center;
-            margin: 3rem 0;
-        }
-
-        .back-button {
-            display: inline-block;
-            text-decoration: none;
-            background-color: #2506ad;
-            color: #fff;
-            padding: 1rem 3rem;
-            font-size: 1.6rem;
-            font-family: "Poppins", sans-serif;
-            font-weight: 600;
-            border-radius: 30px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            transition: all 0.3s ease;
-            text-align: center;
-        }
-
-        .back-button:hover {
-            background-color: #1a047e;
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-            transform: translateY(-3px);
-        }
-
-        .back-button:active {
-            background-color: #0e035c;
-            box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-            transform: translateY(0);
-        }
-
-        .image-container {
-            text-align: center;
-            margin: 3rem 0;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .image-container {
-            text-align: center;
-            margin: 3rem 0;
-        }
-
-        .image-container img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            opacity: 0;
-            transform: scale(0.9);
-            animation: fadeIn 1s ease-out forwards;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-
-        .image-container img:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Animation for fade-in effect */
-        @keyframes fadeIn {
-            0% {
-                opacity: 0;
-                transform: scale(0.9);
-            }
-            100% {
-                opacity: 1;
-                transform: scale(1);
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr; /* 1 column on very small screens */
             }
         }
-
-
     </style>
 </head>
-
 <body>
 
-<div class="container">
-    <div class="left-section">
-        <div class="section">
-            <h2 class="section-title">Adresse :</h2>
-            <div class="category">
-                <p>28 RUE CAMILLE BLANC <br>
-                    94400 VITRY-SUR-SEINE</p>
-            </div>
+<div class="main-box">
+    <h1>Informations sur l'Entreprise</h1>
+
+    <div class="container">
+        <div class="box">
+            <h3>Adresse :</h3>
+            <p>28 RUE CAMILLE BLANC <br> 94400 VITRY-SUR-SEINE</p>
+        </div>
+
+        <div class="box">
+            <h3>Forme Juridique :</h3>
+            <p>SASU (Société par actions simplifiée à associé unique)</p>
+        </div>
+
+        <div class="box">
+            <h3>Taille :</h3>
+            <p>Petite structure (4 salariés)</p>
+        </div>
+
+        <div class="box">
+            <h3>Secteur d'activité :</h3>
+            <p>Services de transport privé et personnalisé pour clients VIP</p>
+        </div>
+
+        <div class="box">
+            <h3>RGPD :</h3>
+            <p>- Protection des données personnelles <br>- Consentement éclairé</p>
+        </div>
+
+        <div class="box">
+            <h3>La mission :</h3>
+            <p>Créer un site vitrine moderne et facile à utiliser pour notre service de location de voitures</p>
+        </div>
+
+        <div class="box">
+            <h3>Outils utilisés :</h3>
+            <p>J’ai utilisé WordPress, un outil flexible pour gérer le contenu et optimiser l’expérience utilisateur, avec des plugins pour améliorer la performance et la réactivité.</p>
+        </div>
+
+        <div class="box">
+            <h3>Défis rencontrés :</h3>
+            <p>Le plus gros défi a été d’assurer une bonne compatibilité sur tous les appareils</p>
+        </div>
+
+        <div class="box">
+            <h3>Conclusion :</h3>
+            <p>Ce projet m’a permis d’apprendre à créer un site en parfaite adéquation avec les besoins du client. Cette expérience a enrichi mes compétences pour mes projets futurs</p>
         </div>
     </div>
-
-    <div class="right-section">
-        <div class="section">
-            <h2 class="section-title">Forme Juridique :</h2>
-            <div class="category">
-                <p>SASU (Société par actions siplifiée à associé unique)
-                </p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="left-section">
-        <div class="section">
-            <h2 class="section-title">Taille :</h2>
-            <div class="category">
-                <p>Petite structure (4 salariés)</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="right-section">
-        <div class="section">
-            <h2 class="section-title">Secteur d'activité :</h2>
-            <div class="category">
-                <p>Services de transport privé et personnalisé pour clients VIP</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="container">
-    <div class="left-section">
-        <div class="section">
-            <h2 class="section-title">RGPD :</h2>
-            <div class="category">
-                <p>- Protection des données personnelles <br>
-                    - consentement éclairé</p>
-            </div>
-        </div>
-    </div>
-
-    <div class="right-section">
-        <div class="section">
-            <h2 class="section-title">La mission :</h2>
-            <div class="category">
-                <p>Conception et mise en œuvre d'un site vitrine</p>
-            </div>
-        </div>
-    </div>
-</div>
-
-<div class="image-container">
-    <img src="assets/images/externalites.png" alt="Externalités" />
 </div>
 
 </body>
