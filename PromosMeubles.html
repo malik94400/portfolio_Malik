@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promos Meubles</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            padding: 2rem;
+        }
+
+        .main-box {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+        }
+
+        .main-box h1 {
+            font-size: 2.5rem;
+            text-align: center;
+            color: #4b49df;
+            margin-bottom: 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr); /* 3 columns */
+            gap: 20px;
+            padding: 2rem;
+        }
+
+        .box {
+            background-color: #4b49df;
+            height: 200px;
+            border-radius: 8px;
+            color: white;
+            padding: 1rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .box h3 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: #ffffff;
+        }
+
+        .box p {
+            font-size: 1rem;
+            line-height: 1.5;
+            color: #f0f0f0;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr 1fr; /* 2 columns on smaller screens */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .container {
+                grid-template-columns: 1fr; /* 1 column on very small screens */
+            }
+        }
+
+        /* Styling for the image at the bottom */
+        .image-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .image-container img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Styling for SWOT section */
+        .swot-box {
+            background-color: #fff;
+            border-radius: 12px;
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .swot-box h2 {
+            font-size: 2rem;
+            text-align: center;
+            color: #4b49df;
+            margin-bottom: 1.5rem;
+        }
+
+        .swot-section {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 1.5rem;
+        }
+
+        .swot-column {
+            flex: 1;
+            padding: 1rem;
+            margin: 0 10px;
+            border-radius: 8px;
+            background-color: #f9f9f9;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .swot-column h3 {
+            font-size: 1.5rem;
+            color: #4b49df;
+        }
+
+        .swot-column p {
+            font-size: 1rem;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+<div class="main-box">
+    <h1>Informations sur l'Entreprise</h1>
+
+    <div class="container">
+        <div class="box">
+            <h3>Adresse :</h3>
+            <p>28 RUE CAMILLE BLANC <br> 94400 VITRY-SUR-SEINE</p>
+        </div>
+
+        <div class="box">
+            <h3>Forme Juridique :</h3>
+            <p>SASU (Société par actions simplifiée à associé unique)</p>
+        </div>
+
+        <div class="box">
+            <h3>Taille :</h3>
+            <p>Petite structure (4 salariés)</p>
+        </div>
+
+        <div class="box">
+            <h3>Secteur d'activité :</h3>
+            <p>Services de transport privé et personnalisé pour clients VIP</p>
+        </div>
+
+        <div class="box">
+            <h3>RGPD :</h3>
+            <p>- Protection des données personnelles <br>- Consentement éclairé</p>
+        </div>
+
+        <div class="box">
+            <h3>La mission :</h3>
+            <p>Créer un site vitrine moderne et facile à utiliser pour notre service de location de voitures</p>
+        </div>
+
+        <div class="box">
+            <h3>Outils utilisés :</h3>
+            <p>J’ai utilisé WordPress, un outil flexible pour gérer le contenu et optimiser l’expérience utilisateur, avec des plugins pour améliorer la performance et la réactivité.</p>
+        </div>
+
+        <div class="box">
+            <h3>Défis rencontrés :</h3>
+            <p>Le plus gros défi a été d’assurer une bonne compatibilité sur tous les appareils</p>
+        </div>
+
+        <div class="box">
+            <h3>Conclusion :</h3>
+            <p>Ce projet m’a permis d’apprendre à créer un site en parfaite adéquation avec les besoins du client. Cette expérience a enrichi mes compétences pour mes projets futurs</p>
+        </div>
+    </div>
+
+    <!-- SWOT Analysis -->
+    <div class="swot-box">
+        <h2>Analyse SWOT</h2>
+
+        <div class="swot-section">
+            <div class="swot-column">
+                <h3>Forces</h3>
+                <p>Véhicules de prestige offrant un confort optimal.</p>
+            </div>
+
+            <div class="swot-column">
+                <h3>Faiblesses</h3>
+                <p>Coûts d'exploitation élévés.</p>
+            </div>
+        </div>
+
+        <div class="swot-section">
+            <div class="swot-column">
+                <h3>Opportunités</h3>
+                <p>Croissance de la demande de services de transport écologique.</p>
+            </div>
+
+            <div class="swot-column">
+                <h3>Menaces</h3>
+                <p>Concurrence accrue.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Image at the bottom -->
+    <div class="image-container">
+        <img src="assets/images/externalites.png" alt="Image Description">
+    </div>
+
+</div>
+
+</body>
+</html>
