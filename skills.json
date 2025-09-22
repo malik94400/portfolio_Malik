@@ -36,6 +36,18 @@
         "icon": "https://img.icons8.com/glyph-neue/48/ffffff/github.png"
     },
     {
+      "name": "TypeScript",
+      "icon": "https://img.icons8.com/color/48/000000/typescript.png"
+    },
+    {
+      "name": "Docker",
+      "icon": "https://img.icons8.com/color/48/000000/docker.png"
+    },
+    {
+      "name": "Symfony",
+      "icon": "https://img.icons8.com/color/48/000000/symfony.png"
+    },
+    {
         "name": "WordPress",
         "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
     },
@@ -58,17 +70,5 @@
     {
         "name": "Adobe Lightroom",
         "icon": "https://img.icons8.com/color/48/000000/adobe-lightroom--v1.png"
-    },
-    {
-        "name": "TypeScript",
-        "icon": "https://img.icons8.com/color/48/000000/typescript.png"
-    },
-    {
-        "name": "Docker",
-        "icon": "https://img.icons8.com/color/48/000000/docker.png"
-    },
-    {
-        "name": "Symfony",
-        "icon": "https://img.icons8.com/color/48/000000/symfony.png"
     }
 ]
