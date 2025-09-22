@@ -38,5 +38,37 @@
     {
         "name": "WordPress",
         "icon": "https://img.icons8.com/color/48/000000/wordpress.png"
-    }    
+    },
+    {
+        "name": "Figma",
+        "icon": "https://img.icons8.com/color/48/000000/figma--v1.png"
+    },
+    {
+        "name": "Canva",
+        "icon": "https://img.icons8.com/color/48/000000/canva.png"
+    },
+    {
+        "name": "Adobe Photoshop",
+        "icon": "https://img.icons8.com/color/48/000000/adobe-photoshop--v1.png"
+    },
+    {
+        "name": "Adobe After Effects",
+        "icon": "https://img.icons8.com/color/48/000000/adobe-after-effects--v1.png"
+    },
+    {
+        "name": "Adobe Lightroom",
+        "icon": "https://img.icons8.com/color/48/000000/adobe-lightroom--v1.png"
+    },
+    {
+        "name": "TypeScript",
+        "icon": "https://img.icons8.com/color/48/000000/typescript.png"
+    },
+    {
+        "name": "Docker",
+        "icon": "https://img.icons8.com/color/48/000000/docker.png"
+    },
+    {
+        "name": "Symfony",
+        "icon": "https://img.icons8.com/color/48/000000/symfony.png"
+    }
 ]
